@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useState } from "react";
-import styles from "./afterLogin.module.css";
+import styles from "./after.module.css";
 import { Navbar } from "react-bootstrap";
 
 export default function AfterLogin() {
