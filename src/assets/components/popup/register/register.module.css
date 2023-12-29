@@ -1,0 +1,71 @@
+/* modal */
+
+.form-card {
+  width: 416px;
+  height: 479px;
+  border-radius: 10px;
+  background: #151515;
+  padding: 33px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: 47px;
+  margin-top: 60px;
+  box-shadow: rgba(205, 46, 113, 0.16) 0px 1px 4px,
+    rgba(205, 46, 113, 0.16) 0px 1px 4px, rgba(205, 46, 113, 0.16) 0px 1px 4px,
+    rgba(205, 46, 113, 0.16) 0px 1px 4px;
+  color: #fff;
+}
+
+.title-register {
+  color: rgb(205, 46, 113);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 34px;
+}
+
+.form-control {
+  width: 95%;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #bcbcbc;
+  background: rgba(210, 210, 210, 0.25);
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.btn-login {
+  width: 98%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #cd2e71;
+  color: #fff;
+  margin: 16px 0 21px 0;
+}
+
+.create-account {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.link-register {
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+  color: #fff;
+}

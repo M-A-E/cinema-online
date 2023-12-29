@@ -1,0 +1,46 @@
+.dropdownStyle {
+    position: absolute;
+    top: 65px;
+    right: -20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    z-index: 999;
+    width: 275px;
+    height: 251px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    margin-right: 100px;
+  }
+  
+  .image {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+  }
+  
+  .title {
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    list-style: none;
+    display: flex;
+  }

@@ -1,0 +1,120 @@
+.form-card {
+  width: 484px;
+  height: 426px;
+  border-radius: 10px;
+  background: #151515;
+  padding: 33px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: 47px;
+  margin-top: 80px;
+  box-shadow: rgba(205, 46, 113, 0.16) 0px 2px 4px,
+    rgba(205, 46, 113, 0.16) 0px 2px 4px, rgba(205, 46, 113, 0.16) 0px 2px 4px,
+    rgba(205, 46, 113, 0.16) 0px 2px 4px;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.title-tom {
+  color: rgb(205, 46, 113);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.title-total {
+  color: #cd2e71;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px; /* 266.667% */
+}
+
+.title-price {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px; /* 266.667% */
+  margin-left: 8px;
+}
+
+.form-control {
+  width: 95%;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #bcbcbc;
+  background: rgba(210, 210, 210, 0.25);
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.btn-pay {
+  width: 95%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #cd2e71;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 16px 0 21px 0;
+}
+
+.btn-pay:hover {
+  background: #cd2e71;
+}
+
+.btn-pay:active {
+  background: #ff6ba9;
+  background-color: #ff6ba9;
+}
+
+.btn-pay-option {
+  width: 159px;
+  height: 45px;
+  background: #cd2e71;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-items: center;
+  border: none;
+}
+
+.btn-pay-option:hover {
+  background: #cd2e71;
+}
+
+.btn-pay-option:active {
+  background: #cd2e71;
+  background-color: #cd2e71;
+}
+
+.icon-pay {
+  margin-left: 3px;
+}

@@ -1,95 +1,94 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import Navbar from "@/assets/components/navbar/navbar";
+import styles from "./page.module.css";
+import ButtonComponent from "@/assets/components/button/button";
+import { Container, Row, Form, Button } from "react-bootstrap";
+import { useState } from "react";
+import LoginPopup from "@/assets/components/popup/login/login";
+import RegisterPopup from "@/assets/components/popup/register/register";
+import Slider from "@/assets/components/slider/slider";
+import CardFilm from "@/assets/components/card/card";
 
 export default function Home() {
+  const [modalLogin, setModalLogin] = useState(false);
+
+  const showModalLogin = () => setModalLogin(true);
+  const closeModalLogin = () => setModalLogin(false);
+
+  const [modalRegister, setModalRegister] = useState(false);
+
+  const showModalRegister = () => setModalRegister(true);
+  const closeModalRegister = () => setModalRegister(false);
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+    <Container>
+      <Row>
+        <div className={styles.navbar}>
+          <Navbar />
+          <div className={styles["contaier-button"]}>
+            <a className={styles.login} onClick={showModalLogin}>
+              Login
+            </a>
+            <LoginPopup show={modalLogin} handleClose={closeModalLogin} />
+            <ButtonComponent name={"Register"} onClick={showModalRegister} />
+            <RegisterPopup
+              show={modalRegister}
+              handleClose={closeModalRegister}
             />
-          </a>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </Row>
+      <Row className="d-flex justify-content-center">
+        <Slider />
+      </Row>
+      <Row>
+        <h1 className={styles["list-film"]}>List Film</h1>
+        <div className={styles.card}>
+          <CardFilm
+            src={"spiderman3.png"}
+            alt={"thumbnail"}
+            onClick={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+          <CardFilm
+            src={"godzillaVSkong.png"}
+            alt={"thumbnail"}
+            onClick={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+          <CardFilm
+            src={"tomAndJerry.png"}
+            alt={"thumbnail"}
+            onClick={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+          <CardFilm
+            src={"trollis.png"}
+            alt={"thumbnail"}
+            onClick={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+          <CardFilm
+            src={"lord.png"}
+            alt={"thumbnail"}
+            onClick={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+          <CardFilm
+            src={"theMeg.png"}
+            alt={"thumbnail"}
+            onClick={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+        </div>
+      </Row>
+    </Container>
+  );
 }

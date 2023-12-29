@@ -1,0 +1,20 @@
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: #cd2e71;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.button:active {
+  opacity: 0.5;
+}
