@@ -1,17 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import ButtonComponent from "@/assets/components/button/button";
-import Pay from "@/assets/components/popup/pay/pay";
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import styles from "./datail.module.css";
+import styles from "./page.module.css";
 import AfterLogin from "@/assets/components/navAfterLogin/after";
 
 export default function DetailFilm() {
-  const [pay, setpay] = useState(false);
-
-  const showPay = () => setpay(true);
-  const closePay = () => setpay(false);
 
   return (
     <Container>
@@ -28,16 +22,13 @@ export default function DetailFilm() {
       >
         <Col className="col-md-4">
           <img
-            src="tomAndJerry.png"
+            src="/tomAndJerry.png"
             alt="thumbnail"
             className={styles.thumbnail}
           />
         </Col>
         <Col className="col-md-8">
-          <div className={styles.head}>
             <h1 className={styles.title}>Tom & Jerry</h1>
-            <ButtonComponent name={"Buy Now"} onClick={showPay} />
-          </div>
           <iframe
             width="735px"
             height="275px"
@@ -61,7 +52,6 @@ export default function DetailFilm() {
             save the day.
           </p>
         </Col>
-        <Pay show={pay} handleClose={closePay} />
       </Row>
     </Container>
   );

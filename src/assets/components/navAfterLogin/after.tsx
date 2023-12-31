@@ -3,7 +3,9 @@
 'use client'
 import React, { useState } from "react";
 import styles from "./after.module.css";
-import { Navbar } from "react-bootstrap";
+import Navbar from "../navbar/navbar";
+import { useRouter } from "next/navigation";
+
 
 export default function AfterLogin() {
 
@@ -11,6 +13,12 @@ export default function AfterLogin() {
 
   function toggleDropdown() {
     setShowDropdown(!showDropdown);
+  }
+
+  const router = useRouter() 
+
+  const handleRouting = (url: string) => {
+    router.push(url)
   }
 
   return (
@@ -24,7 +32,7 @@ export default function AfterLogin() {
       <Navbar />
       <div style={{ position: "relative" }}>
         <img
-          src="profile.svg"
+          src="/profile.svg"
           alt="Logo"
           style={{ cursor: "pointer" }}
           onClick={toggleDropdown}
@@ -33,20 +41,20 @@ export default function AfterLogin() {
         {showDropdown && (
           <div className={styles.dropdownStyle}>
             <ul>
-              <div className={styles.menu}>
-                <img src="user.svg" alt="profile" className={styles.image} />
+              <div className={styles.menu} onClick={() => handleRouting("/profile")}>
+                <img src="/user.svg" alt="profile" className={styles.image} />
                 <li className={styles.title}>Profile</li>
               </div>
-              <div className={styles.menu}>
+              <div className={styles.menu} onClick={() => handleRouting("/MyListFilm")}>
                 <img
-                  src="clapperboard.svg"
-                  alt="profile"
+                  src="/clapperboard.svg"
+                  alt="my listfim"
                   className={styles.image}
                 />
                 <li className={styles.title}>My List Film</li>
               </div>
-              <div className={styles.menu}>
-                <img src="logout.svg" alt="profile" className={styles.image} />
+              <div className={styles.menu} onClick={() => handleRouting("/")}>
+                <img src="/logout.svg" alt="logout" className={styles.image} />
                 <li className={styles.title}>Logout</li>
               </div>
             </ul>
