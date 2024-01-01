@@ -1,0 +1,98 @@
+.title-head {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.foto-profile {
+  width: 180px;
+  height: 221.786px;
+}
+
+.title {
+  color: #cd2e71;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.value {
+  color: #616161;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container-transaction {
+  width: 419px;
+  height: 101px;
+  background: rgba(205, 46, 113, 0.44);
+  padding: 16px;
+}
+
+.title-film {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.container-date {
+    display: flex;
+    align-items: center;
+}
+
+.day {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.date {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.price {
+  color: #cd2e71;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.btn-finished {
+  width: 112px;
+  height: 19px;
+  border: none;
+  border-radius: 2px;
+  background: #00ff485f;
+  color: #00ff47;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-finished:active {
+    background: #80ffa4c0;
+}
