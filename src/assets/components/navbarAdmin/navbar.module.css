@@ -8,8 +8,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 8px;
     z-index: 999;
-    width: 275px;
-    height: 251px;
+    width: 235px;
+    height: 181px;
     border-radius: 10px;
     background: #151515;
     box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25),
@@ -23,6 +23,7 @@
     text-align: start;
     height: 80px;
     cursor: pointer;
+    padding: 20px;
   }
   
   .image {
