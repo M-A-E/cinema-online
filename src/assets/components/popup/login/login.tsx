@@ -22,8 +22,13 @@ const LoginPopup: React.FC<LoginProps> = ({ show, handleClose }) => {
 
   const user = {
     email: "asep123@gmail.com",
-    password: "@asep123",
+    password: "asep123",
   };
+
+  const admin = {
+    email: "admin123@gmail.com",
+    password: "admin123",
+  }
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -35,10 +40,9 @@ const LoginPopup: React.FC<LoginProps> = ({ show, handleClose }) => {
 
   const handleLogin = () => {
     if (email === user.email && password === user.password) {
-      console.log('Login berhasil!');
-      router.push('afterLogin'); 
-    } else {
-      setError('Email atau password tidak valid');
+      router.push('/afterLogin'); 
+    } if (email === admin.email && password === admin.password) {
+      router.push('/admin/listTrans');
     }
   };
 

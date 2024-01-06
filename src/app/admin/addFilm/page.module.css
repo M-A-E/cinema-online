@@ -1,0 +1,36 @@
+.title {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.btn-add-film {
+  position: relative;
+  left: 79%;
+  width: 230px;
+  height: 40px;
+  border-radius: 5px;
+  background: #cd2e71;
+  margin-top: 45px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.btn-add-film:hover {
+  background: #ff4593;
+}
+
+.btn-add-film:active {
+  background: #ff9dc6;
+}
