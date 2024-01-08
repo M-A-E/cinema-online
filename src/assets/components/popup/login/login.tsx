@@ -41,10 +41,9 @@ const LoginPopup: React.FC<LoginProps> = ({ show, handleClose }) => {
   const handleLogin = () => {
     if (email === user.email && password === user.password) {
       console.log('Login berhasil!');
-      router.push('/afterLogin'); 
-    } if (email === admin.email && password === admin.password) {
-      console.log('Login berhasil!');
-      router.push('/admin/listTrans'); 
+      router.push('afterLogin'); 
+    } else {
+      setError('Email atau password tidak valid');
     }
   };
 
